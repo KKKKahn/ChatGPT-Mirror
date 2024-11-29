@@ -31,7 +31,7 @@
           <component :is="LogoOpenai" style="margin-bottom: 50px"></component>
 
           <div v-if="IsRegister">创建帐户</div>
-          <div v-else>欢迎回来</div>
+          <div v-else>ChatGPT登录</div>
         </h2>
         <t-loading :loading="loading">
           <t-form :data="loginForm" :label-width="0" :rules="rules" ref="loginFormRef" @submit="onSubmit">
